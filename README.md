@@ -91,7 +91,7 @@
 
 ## Install
 
-This repository should be used as a [GitHub template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository). Instead of cloning or forking, you should create your own repository via the [Use this template](https://github.com/mattermost/tsdx-react-storybook-starter/generate) button or the [GitHub CLI](https://cli.github.com/) with the following command:
+This repository should be used as a [GitHub template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository). Instead of cloning or forking, you should create your own repository via the [Use this template](https://github.com/azigler/tsdx-react-storybook-starter/generate) button or the [GitHub CLI](https://cli.github.com/) with the following command:
 
 ```bash
 gh repo create YOUR_PROJECT_NAME --clone --template azigler/tsdx-react-storybook-starter
