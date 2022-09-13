@@ -2,7 +2,7 @@ name: Continuous Integration
 on: [push]
 jobs:
   ci:
-    name: Build, lint, and test with Node ${{ matrix.node }} on ${{ matrix.os }}
+    name: Lint, build, and test with Node ${{ matrix.node }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -23,8 +23,8 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      - name: Test
-        run: yarn test:ci
-
       - name: Build
         run: yarn build
+
+      - name: Test
+        run: yarn test:ci
