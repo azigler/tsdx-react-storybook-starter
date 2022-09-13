@@ -7,7 +7,7 @@ import scssModule from "../styles/HelloWorld.module.scss"
 import stylModule from "../styles/HelloWorld.module.styl"
 
 import gifUrl from "../images/tsdx.gif"
-import jpgUrl from "../images/sun.jpeg"
+import jpgUrl from "../images/tsdx.jpg"
 import pngUrl from "../images/tsdx.png"
 import svgUrl, { ReactComponent as SvgComponent } from "../images/tsdx.svg"
 import webpUrl from "../images/tsdx.webp"

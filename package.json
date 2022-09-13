@@ -83,19 +83,19 @@
   "size-limit": [
     {
       "path": "dist/tsdx-react-storybook-starter.cjs.production.min.js",
-      "limit": "800 KB"
+      "limit": "25 KB"
     },
     {
       "path": "dist/tsdx-react-storybook-starter.esm.js",
-      "limit": "800 KB"
+      "limit": "25 KB"
     },
     {
       "path": "dist/tsdx-react-storybook-starter.system.production.min.js",
-      "limit": "800 KB"
+      "limit": "25 KB"
     },
     {
       "path": "dist/tsdx-react-storybook-starter.umd.production.min.js",
-      "limit": "800 KB"
+      "limit": "25 KB"
     }
   ],
   "devDependencies": {
