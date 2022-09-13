@@ -30,7 +30,7 @@
     "src"
   ],
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "scripts": {
     "badges": "istanbul-badges-readme --coverageDir=test/__coverage__ --logo=jest",
@@ -104,16 +104,16 @@
     "@rollup/plugin-replace": "^4.0.0",
     "@rollup/plugin-url": "^7.0.0",
     "@size-limit/preset-small-lib": "^8.1.0",
-    "@storybook/addon-a11y": "^6.5.10",
+    "@storybook/addon-a11y": "^6.5.11",
     "@storybook/addon-design-assets": "^6.2.9",
-    "@storybook/addon-essentials": "^6.5.10",
-    "@storybook/addon-jest": "^6.5.10",
-    "@storybook/addon-links": "^6.5.10",
-    "@storybook/addon-storysource": "^6.5.10",
-    "@storybook/addons": "^6.5.10",
-    "@storybook/builder-webpack5": "^6.5.10",
-    "@storybook/manager-webpack5": "^6.5.10",
-    "@storybook/react": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.11",
+    "@storybook/addon-jest": "^6.5.11",
+    "@storybook/addon-links": "^6.5.11",
+    "@storybook/addon-storysource": "^6.5.11",
+    "@storybook/addons": "^6.5.11",
+    "@storybook/builder-webpack5": "^6.5.11",
+    "@storybook/manager-webpack5": "^6.5.11",
+    "@storybook/react": "^6.5.11",
     "@svgr/rollup": "^6.3.1",
     "@svgr/webpack": "^6.3.1",
     "@testing-library/react": "^13.4.0",
