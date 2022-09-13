@@ -22,4 +22,4 @@ jobs:
           output: comment, report-markdown
           package-manager: yarn
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          test-script: yarn test:ci
+          test-script: yarn run tsdx test --passWithNoTests
