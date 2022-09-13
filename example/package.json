@@ -1,0 +1,19 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && parcel build index.html",
+    "clean": "rm -rf dist && rm -rf node_modules && rm -rf .cache && yarn install",
+    "dev": "parcel index.html --open",
+    "prepare": "yarn build",
+    "start": "yarn dev"
+  },
+  "alias": {
+    "$react-dom": "../node_modules/react-dom/profiling"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "parcel-bundler": "^1.12.5"
+  }
+}

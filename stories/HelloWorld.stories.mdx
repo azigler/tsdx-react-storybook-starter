@@ -1,0 +1,29 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+import { HelloWorld } from "../src"
+
+<Meta title="Components/HelloWorld" component={HelloWorld} />
+
+export const HelloWorldTemplate = args => <HelloWorld {...args} />
+
+# HelloWorld
+
+The `HelloWorld` component demonstrates `tsdx-react-storybook-starter` by loading and using the following file formats:
+
+- GIF
+- JPG
+- PNG
+- SVG
+  - Component
+  - URL
+- WEBP
+- CSS Modules
+  - LESS
+  - SASS
+  - PostCSS
+  - Stylus
+
+You can test these different formats by changing the properties on `HelloWorld`.
+
+<Canvas withSource="open">
+  <Story name="HelloWorld">{HelloWorldTemplate.bind({})}</Story>
+</Canvas>

@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HelloWorld component can use CSS Modules in CSS 1`] = `
+<main>
+  <div>
+    Hello
+     
+    <span
+      class="span"
+    >
+      world
+    </span>
+    ! 
+    👋
+    <img
+      alt="TSDX Logo"
+      src="[object Object]"
+    />
+  </div>
+</main>
+`;
+
+exports[`HelloWorld component can use CSS Modules in LESS 1`] = `
+<main>
+  <div>
+    Hello
+     
+    <span
+      class="span"
+    >
+      world
+    </span>
+    ! 
+    👋
+    <img
+      alt="TSDX Logo"
+      src="[object Object]"
+    />
+  </div>
+</main>
+`;
+
+exports[`HelloWorld component can use CSS Modules in SASS 1`] = `
+<main>
+  <div>
+    Hello
+     
+    <span
+      class="span"
+    >
+      world
+    </span>
+    ! 
+    👋
+    <img
+      alt="TSDX Logo"
+      src="[object Object]"
+    />
+  </div>
+</main>
+`;
+
+exports[`HelloWorld component can use CSS Modules in SCSS 1`] = `
+<main>
+  <div>
+    Hello
+     
+    <span
+      class="span"
+    >
+      world
+    </span>
+    ! 
+    👋
+    <img
+      alt="TSDX Logo"
+      src="[object Object]"
+    />
+  </div>
+</main>
+`;
+
+exports[`HelloWorld component can use CSS Modules in Stylus 1`] = `
+<main>
+  <div>
+    Hello
+     
+    <span
+      class="span"
+    >
+      world
+    </span>
+    ! 
+    👋
+    <img
+      alt="TSDX Logo"
+      src="[object Object]"
+    />
+  </div>
+</main>
+`;
+
+exports[`HelloWorld component can use GIFs 1`] = `
+<main>
+  <div>
+    Hello
+     
+    <span
+      class="span"
+    >
+      world
+    </span>
+    ! 
+    👋
+    <img
+      alt="TSDX Logo"
+      src="[object Object]"
+    />
+  </div>
+</main>
+`;
+
+exports[`HelloWorld component can use JPGs 1`] = `
+<main>
+  <div>
+    Hello
+     
+    <span
+      class="span"
+    >
+      world
+    </span>
+    ! 
+    👋
+    <img
+      alt="TSDX Logo"
+      src="[object Object]"
+    />
+  </div>
+</main>
+`;
+
+exports[`HelloWorld component can use PNGs 1`] = `
+<main>
+  <div>
+    Hello
+     
+    <span
+      class="span"
+    >
+      world
+    </span>
+    ! 
+    👋
+    <img
+      alt="TSDX Logo"
+      src="[object Object]"
+    />
+  </div>
+</main>
+`;
+
+exports[`HelloWorld component can use SVG URLs 1`] = `
+<main>
+  <div>
+    Hello
+     
+    <span
+      class="span"
+    >
+      world
+    </span>
+    ! 
+    👋
+    <img
+      alt="TSDX Logo"
+      src="[object Object]"
+    />
+  </div>
+</main>
+`;
+
+exports[`HelloWorld component can use SVG components 1`] = `
+<main>
+  <div>
+    Hello
+     
+    <span
+      class="span"
+    >
+      world
+    </span>
+    ! 
+    👋
+    <img
+      alt="TSDX Logo"
+      src="[object Object]"
+    />
+  </div>
+</main>
+`;
+
+exports[`HelloWorld component can use WEBPs 1`] = `
+<main>
+  <div>
+    Hello
+     
+    <span
+      class="span"
+    >
+      world
+    </span>
+    ! 
+    👋
+    <img
+      alt="TSDX Logo"
+      src="[object Object]"
+    />
+  </div>
+</main>
+`;

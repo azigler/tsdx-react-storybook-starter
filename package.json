@@ -1,0 +1,151 @@
+{
+  "name": "tsdx-react-storybook-starter",
+  "version": "0.1.0",
+  "author": "Andrew Zigler",
+  "description": "TSDX with an opinionated setup for React and Storybook",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azigler/tsdx-react-storybook-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azigler/tsdx-react-storybook-starter/issues",
+    "email": "andrewzigler@gmail.com"
+  },
+  "keywords": [
+    "tsdx",
+    "react",
+    "storybook"
+  ],
+  "funding": {
+    "type": "ko-fi",
+    "url": "https://ko-fi.com/andrewzigler"
+  },
+  "main": "dist/index.js",
+  "module": "dist/tsdx-react-storybook-starter.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "badges": "istanbul-badges-readme --coverageDir=test/__coverage__ --logo=jest",
+    "build": "tsdx build --format cjs,esm,umd,system",
+    "clean": "yarn husky || : && rm -rf dist && rm -rf node_modules && rm -rf storybook-static && yarn install && cd example && yarn clean",
+    "dev": "tsdx watch",
+    "husky": "rm -rf .husky && husky install && npx husky add .husky/pre-commit 'yarn prepare'",
+    "prepare": "yarn lint && yarn build && yarn test && yarn size && yarn badges && yarn storybook:build",
+    "lint": "tsdx lint src test --fix",
+    "size": "size-limit",
+    "start": "yarn dev",
+    "storybook": "start-storybook -p 6006",
+    "storybook:build": "rm -rf storybook-static && build-storybook ",
+    "test": "tsdx test --passWithNoTests --json --outputFile=test/__coverage__/jest-test-results.json --coverageDirectory=test/__coverage__ --coverage",
+    "test:ci": "yarn test --runInBand --ci",
+    "test:watch": "yarn test --watch --maxWorkers=25%"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "eslintConfig": {
+    "plugins": [
+      "jsx-a11y"
+    ],
+    "extends": [
+      "plugin:jsx-a11y/recommended",
+      "react-app",
+      "prettier/@typescript-eslint",
+      "plugin:react/recommended",
+      "plugin:prettier/recommended",
+      "eslint:recommended"
+    ]
+  },
+  "eslintIgnore": [
+    "**/*.d.ts"
+  ],
+  "jest": {
+    "moduleNameMapper": {
+      "^.+.(css|sass|scss|pcss|sss|less|styl|stylus|png|gif|jpg|jpeg|webp|svg|mdx)$": "jest-transform-stub"
+    },
+    "globals": {
+      "IS_REACT_ACT_ENVIRONMENT": true
+    },
+    "coverageReporters": [
+      "json-summary",
+      "html",
+      "text-summary"
+    ]
+  },
+  "size-limit": [
+    {
+      "path": "dist/tsdx-react-storybook-starter.cjs.production.min.js",
+      "limit": "25 KB"
+    },
+    {
+      "path": "dist/tsdx-react-storybook-starter.esm.js",
+      "limit": "25 KB"
+    },
+    {
+      "path": "dist/tsdx-react-storybook-starter.system.production.min.js",
+      "limit": "25 KB"
+    },
+    {
+      "path": "dist/tsdx-react-storybook-starter.umd.production.min.js",
+      "limit": "25 KB"
+    }
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@rollup/plugin-image": "^2.1.1",
+    "@rollup/plugin-replace": "^4.0.0",
+    "@rollup/plugin-url": "^7.0.0",
+    "@size-limit/preset-small-lib": "^8.1.0",
+    "@storybook/addon-a11y": "^6.5.10",
+    "@storybook/addon-design-assets": "^6.2.9",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-jest": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/addon-storysource": "^6.5.10",
+    "@storybook/addons": "^6.5.10",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@svgr/rollup": "^6.3.1",
+    "@svgr/webpack": "^6.3.1",
+    "@testing-library/react": "^13.4.0",
+    "@types/mdx": "^2.0.2",
+    "@types/react": "^18.0.19",
+    "@types/react-dom": "^18.0.6",
+    "babel-loader": "^8.2.5",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "file-loader": "^6.2.0",
+    "husky": "^8.0.1",
+    "istanbul-badges-readme": "^1.8.2",
+    "jest-transform-stub": "^2.0.0",
+    "less-loader": "^11.0.0",
+    "postcss": "^8.4.16",
+    "postcss-loader": "^7.0.1",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass-loader": "^13.0.2",
+    "size-limit": "^8.1.0",
+    "stylus-loader": "^7.0.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3",
+    "typescript-plugin-css-modules": "^3.4.0"
+  },
+  "resolutions": {
+    "@storybook/core-common/webpack": "^5",
+    "@storybook/core-server/webpack": "^5",
+    "@storybook/react/webpack": "^5"
+  }
+}

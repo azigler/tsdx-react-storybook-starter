@@ -1,0 +1,10 @@
+*.log
+.DS_Store
+node_modules
+.cache
+dist
+.TODO
+.parcel-cache
+*.code-workspace
+storybook-static
+__coverage__
