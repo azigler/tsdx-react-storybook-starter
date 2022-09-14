@@ -1,0 +1,4 @@
+{"total": {"lines":{"total":38,"covered":38,"skipped":0,"pct":100},"statements":{"total":39,"covered":39,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"branches":{"total":18,"covered":18,"skipped":0,"pct":100},"branchesTrue":{"total":0,"covered":0,"skipped":0,"pct":100}}
+,"/home/runner/work/tsdx-react-storybook-starter/tsdx-react-storybook-starter/src/index.tsx": {"lines":{"total":2,"covered":2,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":2,"covered":2,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
+,"/home/runner/work/tsdx-react-storybook-starter/tsdx-react-storybook-starter/src/components/HelloWorld.tsx": {"lines":{"total":36,"covered":36,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":37,"covered":37,"skipped":0,"pct":100},"branches":{"total":18,"covered":18,"skipped":0,"pct":100}}
+}
