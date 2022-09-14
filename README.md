@@ -9,10 +9,12 @@
 [![Code of Conduct](https://img.shields.io/badge/contributor-covenant-EEE.svg?style=popout-square)](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/.github/CODE_OF_CONDUCT.md)
 [![Security Policy](https://img.shields.io/badge/security-policy-EEE.svg?style=popout-square)](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/.github/SECURITY.md)
 
-![Statements](https://img.shields.io/badge/statements-100%25-brightgreen.svg?style=flat&logo=jest)
-![Branches](https://img.shields.io/badge/branches-100%25-brightgreen.svg?style=flat&logo=jest)
-![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg?style=flat&logo=jest)
-![Lines](https://img.shields.io/badge/lines-100%25-brightgreen.svg?style=flat&logo=jest)
+[![Statements](https://img.shields.io/badge/statements-100%25-brightgreen.svg?style=flat&logo=jest)](https://azigler.github.io/tsdx-react-storybook-starter/coverage/)
+[![Branches](https://img.shields.io/badge/branches-100%25-brightgreen.svg?style=flat&logo=jest)](https://azigler.github.io/tsdx-react-storybook-starter/coverage/)
+[![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg?style=flat&logo=jest)](https://azigler.github.io/tsdx-react-storybook-starter/coverage/)
+[![Lines](https://img.shields.io/badge/lines-100%25-brightgreen.svg?style=flat&logo=jest)](https://azigler.github.io/tsdx-react-storybook-starter/coverage/)
+
+[![Storybook](https://github.com/storybookjs/brand/raw/main/badge/badge-storybook.svg)](https://azigler.github.io/tsdx-react-storybook-starter/storybook)
 
 # Table of Contents
 
@@ -113,7 +115,7 @@ You can append additional flags to the scripts when you call them. **These scrip
 - `badges`: Adds [badges](https://github.com/olavoparno/istanbul-badges-readme) to [`README.md`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/README.md) for [Jest](https://jestjs.io/) tests
 - `build`: Runs [`tsdx build`](https://tsdx.io/api-reference#code-tsdx-build-code) to build CommonJS, ESModules, Universal, and [SystemJS](https://github.com/systemjs/systemjs) module formats to the `/dist` directory
 - `clean`: Cleans up caches, `/dist`, and `/storybook-static` here and in [`/example`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/example)
-- `deploy`: Build and compile Storybook, [`/example`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/example), and Jest test coverage to the `/deploy` directory
+- `deploy`: Build and copy Storybook, [`/example`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/example), and Jest test coverage to the `/deploy` directory
 - `dev`: Runs [`tsdx watch`](https://tsdx.io/api-reference#code-tsdx-watch-code)
 - `husky`: Initializes [Husky](https://typicode.github.io/husky/#/) using a `pre-commit` hook with  `yarn prepare`
 - `prepare`: Runs automatically after `install`, alias for `lint`, `build`, `test`, `size`, `badges` scripts
@@ -166,6 +168,10 @@ To build Storybook as a static site to the `/storybook-static` directory, use th
 yarn storybook:build
 ```
 
+To preview the Storybook for the [`main`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main) branch of [`tsdx-react-storybook-starter`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main), click the following badge:
+
+[![Storybook](https://github.com/storybookjs/brand/raw/main/badge/badge-storybook.svg)](https://azigler.github.io/tsdx-react-storybook-starter/storybook)
+
 ### Example
 
 To start a [Parcel development server](https://parceljs.org/features/development/) at [`http://localhost:1234`](http://localhost:1234) with hot reloading, use the following command in the [`/example`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/example) directory:
@@ -181,6 +187,8 @@ To build the example to the `/example/dist` directory for production, use the fo
 ```bash
 yarn build
 ```
+
+To preview the example in the [`main`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main) branch of [`tsdx-react-storybook-starter`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main), click [here](https://azigler.github.io/tsdx-react-storybook-starter/example).
 
 #### Scripts
 
