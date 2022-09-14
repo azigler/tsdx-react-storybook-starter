@@ -8,3 +8,4 @@ dist
 *.code-workspace
 storybook-static
 __coverage__
+deploy

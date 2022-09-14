@@ -1,8 +1,8 @@
-name: Continuous Integration
+name: CI
 on: [push]
 jobs:
   ci:
-    name: Lint, build, and test with Node ${{ matrix.node }} on ${{ matrix.os }}
+    name: ${{ matrix.os }}/${{ matrix.node }} lint, build, and test
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:

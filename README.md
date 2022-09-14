@@ -36,6 +36,7 @@
 - [Yarn](https://yarnpkg.com/)
 - [GitHub Actions](https://docs.github.com/en/actions)
   - `ci`: Continuous integration (linting, testing, and building) on push
+  - `deploy`: Deploy Storybook, [`/example`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/example), and Jest test coverage to [GitHub Pages](https://pages.github.com/) with [jamesives/github-pages-deploy-action@v4](https://github.com/JamesIves/github-pages-deploy-action)
   - `pull_request`: [andresz1/size-limit-action](https://github.com/andresz1/size-limit-action) and [artiomtr/jest-coverage-report-action](https://github.com/ArtiomTr/jest-coverage-report-action) on pull requests
 - [TSDX](https://tsdx.io/)
   - [React](https://reactjs.org/) (v18)
@@ -112,6 +113,7 @@ You can append additional flags to the scripts when you call them. **These scrip
 - `badges`: Adds [badges](https://github.com/olavoparno/istanbul-badges-readme) to [`README.md`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/README.md) for [Jest](https://jestjs.io/) tests
 - `build`: Runs [`tsdx build`](https://tsdx.io/api-reference#code-tsdx-build-code) to build CommonJS, ESModules, Universal, and [SystemJS](https://github.com/systemjs/systemjs) module formats to the `/dist` directory
 - `clean`: Cleans up caches, `/dist`, and `/storybook-static` here and in [`/example`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/example)
+- `deploy`: Build and compile Storybook, [`/example`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/example), and Jest test coverage to the `/deploy` directory
 - `dev`: Runs [`tsdx watch`](https://tsdx.io/api-reference#code-tsdx-watch-code)
 - `husky`: Initializes [Husky](https://typicode.github.io/husky/#/) using a `pre-commit` hook with  `yarn prepare`
 - `prepare`: Runs automatically after `install`, alias for `lint`, `build`, `test`, `size`, `badges` scripts
