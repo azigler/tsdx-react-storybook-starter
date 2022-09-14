@@ -15,6 +15,7 @@ jobs:
 
       - name: Build and combine files
         run: |
+          yarn install
           yarn deploy
 
       - name: Deploy
