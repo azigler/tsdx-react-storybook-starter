@@ -195,7 +195,6 @@ To preview the example in the [`main`](https://github.com/azigler/tsdx-react-sto
 - `build`: Builds for [production](https://parceljs.org/features/production/) to the `/example/dist` directory
 - `clean`: Cleans up caches and the `/example/dist` directory
 - `dev`: Starts a [development server](https://parceljs.org/features/development/) at [`http://localhost:1234`](http://localhost:1234) with hot reloading
-- `prepare`: Runs automatically after `install`, alias for `build` script
 - `start`: Alias for `dev` script
 
 

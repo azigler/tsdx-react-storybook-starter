@@ -38,7 +38,7 @@
     "badges": "istanbul-badges-readme --coverageDir=test/__coverage__ --logo=jest",
     "build": "tsdx build --format cjs,esm,umd,system",
     "clean": "yarn husky || : && rm -rf dist && rm -rf deploy && rm -rf node_modules && rm -rf storybook-static && yarn install && cd example && yarn clean",
-    "deploy": "rm -rf deploy && mkdir deploy && cp -r storybook-static deploy/storybook && cp -r test/__coverage__ deploy/coverage && cd example && yarn install && cp -r dist/. ../deploy",
+    "deploy": "rm -rf deploy && mkdir deploy && cp -r storybook-static deploy/storybook && cp -r test/__coverage__ deploy/coverage && cd example && yarn install && yarn run parcel build --public-url=https://azigler.github.io/tsdx-react-storybook-starter/example index.html && cp -r dist/. ../deploy/example",
     "dev": "tsdx watch",
     "husky": "rm -rf .husky && husky install && npx husky add .husky/pre-commit 'yarn prepare'",
     "prepare": "yarn lint && yarn build && yarn test && yarn size && yarn badges && yarn storybook:build",
