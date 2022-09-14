@@ -16,7 +16,9 @@
   "keywords": [
     "tsdx",
     "react",
-    "storybook"
+    "storybook",
+    "typescript",
+    "component-library"
   ],
   "funding": {
     "type": "ko-fi",
