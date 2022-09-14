@@ -2,7 +2,7 @@ name: CI
 on: [push]
 jobs:
   ci:
-    name: ${{ matrix.os }}/${{ matrix.node }} lint, build, and test
+    name: ${{ matrix.os }}/Node ${{ matrix.node }} lint, build, and test
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
