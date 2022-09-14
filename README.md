@@ -188,7 +188,7 @@ To build the example to the `/example/dist` directory for production, use the fo
 yarn build
 ```
 
-To preview the example in the [`main`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main) branch of [`tsdx-react-storybook-starter`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main), click [here](https://azigler.github.io/tsdx-react-storybook-starter).
+To preview the example in the [`main`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main) branch of [`tsdx-react-storybook-starter`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main), click [here](https://azigler.github.io/tsdx-react-storybook-starter/example).
 
 #### Scripts
 
