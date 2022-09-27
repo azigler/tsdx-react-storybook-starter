@@ -12,7 +12,7 @@ module.exports = {
     enableCrashReports: false
   },
   framework: "@storybook/react",
-  stories: ["../stories/**/*.stories.@(ts|tsx|js|jsx|mdx)"],
+  stories: ["../**/*.stories.@(ts|tsx|js|jsx|mdx)"],
   typescript: {
     reactDocgen: "react-docgen-typescript"
   },

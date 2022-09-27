@@ -1,7 +1,7 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
 import { act } from "react-dom/test-utils"
-import { HelloWorld } from "../src"
+import { HelloWorld } from ".."
 
 describe("HelloWorld component", () => {
   it("can use CSS Modules in CSS", () => {

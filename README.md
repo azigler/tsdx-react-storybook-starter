@@ -119,12 +119,12 @@ You can append additional flags to the scripts when you call them. **These scrip
 - `dev`: Runs [`tsdx watch`](https://tsdx.io/api-reference#code-tsdx-watch-code)
 - `husky`: Initializes [Husky](https://typicode.github.io/husky/#/) using a `pre-commit` hook with  `yarn prepare`
 - `prepare`: Runs automatically after `install`, alias for `lint`, `build`, `test`, `size`, `badges` scripts
-- `lint`: Runs [`tsdx lint`](https://tsdx.io/api-reference#code-tsdx-test-code) recursively in the [`/src`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/src) and [`/test`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/test) directories with the [`--fix`](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix) flag
+- `lint`: Runs [`tsdx lint`](https://tsdx.io/api-reference#code-tsdx-test-code) recursively in the [`/src`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/src) directory with the [`--fix`](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix) flag
 - `size`: Runs [ai/size-limit](https://github.com/ai/size-limit) using `size-limit` configurations in [`package.json`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/package.json)
 - `start`: Alias for `dev` script
 - `storybook`: Starts a Storybook server at [`http://localhost:6006`](http://localhost:6006)
 - `storybook:build`: Builds Storybook to the `/storybook-static` directory
-- `test`: Runs [Jest](https://jestjs.io/) tests in the [`/test`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/test) directory to save results and coverage
+- `test`: Runs [Jest](https://jestjs.io/) tests recursively found in the [`/src`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/src) directory to save results, coverage, and snapshots
 - `test:ci`: Alias for `test` script when executed via [`ci`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/.github/workflows/ci.yml) GitHub Action
 - `test:watch`: Alias for `test` script that watches for changes
 
@@ -158,7 +158,7 @@ To start a Storybook development server with hot reloading at [`http://localhost
 yarn storybook
 ```
 
-This loads all stories from the [`/stories`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/stories) directory.
+This loads all stories recursively inside the [`/src`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/src) directory.
 
 Stories should reference the components as if using the library, similar to the example playground. This means importing from the root project directory, which aliases to the `/dist` directory.
 

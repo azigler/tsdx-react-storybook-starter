@@ -1,16 +1,16 @@
 import React, { FC } from "react"
 
-import cssModule from "../styles/HelloWorld.module.css"
-import lessModule from "../styles/HelloWorld.module.less"
-import sassModule from "../styles/HelloWorld.module.sass"
-import scssModule from "../styles/HelloWorld.module.scss"
-import stylModule from "../styles/HelloWorld.module.styl"
+import cssModule from "./HelloWorld.module.css"
+import lessModule from "./HelloWorld.module.less"
+import sassModule from "./HelloWorld.module.sass"
+import scssModule from "./HelloWorld.module.scss"
+import stylModule from "./HelloWorld.module.styl"
 
-import gifUrl from "../images/tsdx.gif"
-import jpgUrl from "../images/tsdx.jpg"
-import pngUrl from "../images/tsdx.png"
-import svgUrl, { ReactComponent as SvgComponent } from "../images/tsdx.svg"
-import webpUrl from "../images/tsdx.webp"
+import gifUrl from "./tsdx.gif"
+import jpgUrl from "./tsdx.jpg"
+import pngUrl from "./tsdx.png"
+import svgUrl, { ReactComponent as SvgComponent } from "./tsdx.svg"
+import webpUrl from "./tsdx.webp"
 
 export interface HelloWorldProps {
   /** Greeting phrase */
