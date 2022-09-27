@@ -38,7 +38,7 @@
     "badges": "istanbul-badges-readme --coverageDir=test/__coverage__ --logo=jest",
     "build": "tsdx build --format cjs,esm,umd,system",
     "clean": "yarn husky || : && rm -rf dist && rm -rf deploy && rm -rf node_modules && rm -rf storybook-static && yarn install && cd example && yarn clean",
-    "deploy": "rm -rf deploy && mkdir deploy && cp -r storybook-static deploy/storybook && cp -r test/__coverage__ deploy/coverage && cd example && yarn install && yarn run parcel build --public-url=https://azigler.github.io/tsdx-react-storybook-starter/example index.html && cp -r dist/. ../deploy/example",
+    "deploy": "rm -rf deploy && mkdir deploy && yarn storybook:build && cp -r storybook-static deploy/storybook && cp -r test/__coverage__ deploy/coverage && cd example && yarn install && yarn run parcel build --public-url=https://azigler.github.io/tsdx-react-storybook-starter/example index.html && cp -r dist/. ../deploy/example",
     "dev": "tsdx watch",
     "husky": "rm -rf .husky && husky install && npx husky add .husky/pre-commit 'yarn prepare'",
     "husky:prepare": "yarn lint && yarn build && yarn test && yarn size && yarn badges && yarn storybook:build",
@@ -46,7 +46,7 @@
     "size": "size-limit",
     "start": "yarn dev",
     "storybook": "start-storybook -p 6006",
-    "storybook:build": "rm -rf storybook-static && build-storybook ",
+    "storybook:build": "rm -rf storybook-static && build-storybook",
     "test": "tsdx test --passWithNoTests --json --outputFile=test/__coverage__/jest-test-results.json --coverageDirectory=test/__coverage__ --coverage && yarn badges",
     "test:ci": "yarn test --runInBand --ci",
     "test:watch": "yarn test --watch --maxWorkers=25%"
