@@ -81,8 +81,7 @@
       "json-summary",
       "html",
       "text-summary"
-    ],
-    "snapshotResolver": "./test/snapshotResolver.js"
+    ]
   },
   "size-limit": [
     {
