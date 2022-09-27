@@ -115,7 +115,7 @@ You can append additional flags to the scripts when you call them. **These scrip
 - `badges`: Adds [badges](https://github.com/olavoparno/istanbul-badges-readme) to [`README.md`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/README.md) for [Jest](https://jestjs.io/) tests
 - `build`: Runs [`tsdx build`](https://tsdx.io/api-reference#code-tsdx-build-code) to build CommonJS, ESModules, Universal, and [SystemJS](https://github.com/systemjs/systemjs) module formats to the `/dist` directory
 - `clean`: Cleans up caches, `/dist`, and `/storybook-static` here and in [`/example`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/example)
-- `deploy`: Runs the `test` script then builds and copies Storybook, [`/example`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/example), and Jest test coverage to the `/deploy` directory
+- `deploy`: Runs the `test` and `build` scripts then builds and copies Storybook, [`/example`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/example), and Jest test coverage to the `/deploy` directory
 - `dev`: Runs [`tsdx watch`](https://tsdx.io/api-reference#code-tsdx-watch-code)
 - `husky`: Initializes [Husky](https://typicode.github.io/husky/#/) using a `pre-commit` hook with `yarn husky:prepare`
 - `husky:prepare`: Alias for `lint`, `build`, `test`, `size`, `badges` scripts
