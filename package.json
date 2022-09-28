@@ -41,7 +41,7 @@
     "deploy": "rm -rf deploy && mkdir deploy && yarn test && yarn build && yarn storybook:build && cp -r storybook-static deploy/storybook && cp -r test/__coverage__ deploy/coverage && cd example && yarn install && yarn run parcel build --public-url=https://azigler.github.io/tsdx-react-storybook-starter/example index.html && cp -r dist/. ../deploy/example",
     "dev": "tsdx watch",
     "husky": "rm -rf .husky && husky install && npx husky add .husky/pre-commit 'yarn husky:prepare'",
-    "husky:prepare": "yarn lint && yarn build && yarn test && yarn size && yarn badges && yarn storybook:build",
+    "husky:prepare": "yarn lint && yarn build && yarn test && yarn size && yarn storybook:build",
     "lint": "tsdx lint src --fix",
     "size": "size-limit",
     "start": "yarn dev",

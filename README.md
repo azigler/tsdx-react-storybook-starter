@@ -118,7 +118,7 @@ You can append additional flags to the scripts when you call them. **These scrip
 - `deploy`: Runs the `test` and `build` scripts then builds and copies Storybook, [`/example`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/example), and Jest test coverage to the `/deploy` directory
 - `dev`: Runs [`tsdx watch`](https://tsdx.io/api-reference#code-tsdx-watch-code)
 - `husky`: Initializes [Husky](https://typicode.github.io/husky/#/) using a `pre-commit` hook with `yarn husky:prepare`
-- `husky:prepare`: Alias for `lint`, `build`, `test`, `size`, `badges` scripts
+- `husky:prepare`: Alias for `lint`, `build`, `test`, `size`, and `storybook:build` scripts
 - `lint`: Runs [`tsdx lint`](https://tsdx.io/api-reference#code-tsdx-test-code) recursively in the [`/src`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/src) directory with the [`--fix`](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix) flag
 - `size`: Runs [ai/size-limit](https://github.com/ai/size-limit) using `size-limit` configurations in [`package.json`](https://github.com/azigler/tsdx-react-storybook-starter/tree/main/package.json)
 - `start`: Alias for `dev` script
