@@ -33,7 +33,7 @@ export const HelloWorld: FC<HelloWorldProps> = ({
   appended = "👋",
   logoAlt = "TSDX Logo",
   logoRender = "svgComponent",
-  cssModuleType = "css"
+  cssModuleType = "css",
 }) => {
   let logo
 

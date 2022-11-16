@@ -7,13 +7,13 @@ export const parameters = {
   layout: "centered",
   options: {
     storySort: {
-      method: "alphabetical"
-    }
-  }
+      method: "alphabetical",
+    },
+  },
 }
 
 export const decorators = [
   withTests({
-    results
-  })
+    results,
+  }),
 ]

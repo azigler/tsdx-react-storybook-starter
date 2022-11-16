@@ -5,18 +5,18 @@ module.exports = {
     "@storybook/addon-a11y",
     "@storybook/addon-links",
     "@storybook/addon-storysource",
-    "@storybook/addon-essentials"
+    "@storybook/addon-essentials",
   ],
   core: {
     builder: "webpack5",
-    enableCrashReports: false
+    enableCrashReports: false,
   },
   framework: "@storybook/react",
   stories: ["../**/*.stories.@(ts|tsx|js|jsx|mdx)"],
   typescript: {
-    reactDocgen: "react-docgen-typescript"
+    reactDocgen: "react-docgen-typescript",
   },
-  webpackFinal: async config => {
+  webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.less$/i,
       use: [
@@ -26,12 +26,12 @@ module.exports = {
           options: {
             modules: {
               auto: true,
-              localIdentName: "[name]__[local]--[hash:base64:5]"
-            }
-          }
+              localIdentName: "[name]__[local]--[hash:base64:5]",
+            },
+          },
         },
-        "less-loader"
-      ]
+        "less-loader",
+      ],
     })
     config.module.rules.push({
       test: /\.(sass)$/i,
@@ -42,12 +42,12 @@ module.exports = {
           options: {
             modules: {
               auto: true,
-              localIdentName: "[name]__[local]--[hash:base64:5]"
-            }
-          }
+              localIdentName: "[name]__[local]--[hash:base64:5]",
+            },
+          },
         },
-        "sass-loader"
-      ]
+        "sass-loader",
+      ],
     })
     config.module.rules.push({
       test: /\.(scss|pcss|sss)$/i,
@@ -58,19 +58,19 @@ module.exports = {
           options: {
             modules: {
               auto: true,
-              localIdentName: "[name]__[local]--[hash:base64:5]"
-            }
-          }
+              localIdentName: "[name]__[local]--[hash:base64:5]",
+            },
+          },
         },
         {
           loader: "postcss-loader",
           options: {
             postcssOptions: {
-              plugins: ["postcss-preset-env", "postcss-nested"]
-            }
-          }
-        }
-      ]
+              plugins: ["postcss-preset-env", "postcss-nested"],
+            },
+          },
+        },
+      ],
     })
     config.module.rules.push({
       test: /\.styl(|us)$/i,
@@ -81,30 +81,30 @@ module.exports = {
           options: {
             modules: {
               auto: true,
-              localIdentName: "[name]__[local]--[hash:base64:5]"
-            }
-          }
+              localIdentName: "[name]__[local]--[hash:base64:5]",
+            },
+          },
         },
-        "stylus-loader"
-      ]
+        "stylus-loader",
+      ],
     })
     config.module.rules.push({
       test: /\.svg$/i,
       use: [
         {
-          loader: "@svgr/webpack"
+          loader: "@svgr/webpack",
         },
         {
           loader: "file-loader",
           options: {
-            name: "static/media/[path][name].[ext]"
-          }
-        }
+            name: "static/media/[path][name].[ext]",
+          },
+        },
       ],
       type: "javascript/auto",
-      issuer: /\.(ts|tsx|js|jsx|md|mdx)$/i
+      issuer: /\.(ts|tsx|js|jsx|md|mdx)$/i,
     })
 
     return config
-  }
+  },
 }
